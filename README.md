@@ -33,4 +33,16 @@
 #main-window:not([customizing]) .titlebar-button:first-child:hover {
     padding-left: 10px !important;
 }
+#main-window  {
+  background-color: transparent !important;
+  -moz-appearance: -moz-win-glass !important;
+  background-image: none !important;
+}
+#navigator-toolbox {
+  background-color: transparent !important;
+  color: #FFFFFF !important;
+}
+#TabsToolbar {
+  background-color: transparent !important;
+}
 ```
