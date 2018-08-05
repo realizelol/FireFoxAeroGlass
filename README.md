@@ -1,7 +1,7 @@
 # FireFoxAeroGlass
 #
 
-´´´
+```
 /* Firefox Quantum userChrome.css tweaks ************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
@@ -33,4 +33,4 @@
 #main-window:not([customizing]) .titlebar-button:first-child:hover {
     padding-left: 10px !important;
 }
-´´´
+```
