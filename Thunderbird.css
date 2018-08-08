@@ -3,11 +3,12 @@
 /****************************************************************************************/
 /* Glass8 ( http://www.glass8.eu/ ) required for 'Windows 7'-like window transparency */
 
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
 .titlebar-button {
   margin-bottom: 10px !important;
   opacity: 0.01 !important;
 }
-
 .titlebar-button:hover {
   opacity: 0.25 !important;
   background: #FF6666 !important;
@@ -56,4 +57,42 @@ fill: #333333 !important;
 #folderTree {
   background-color: #656565 !important;
   color: #FEFEFE !important;
+}
+#msgIdentity {
+  background-color: #333 !important;
+}
+#msgIdentity:hover,
+#msgIdentity[focused="true"] {
+  background-color: #666 !important;
+}
+.aw-menulist {
+	border: 0 !important;
+}
+ #textcol-addressingWidget {
+background-color: #333 !important;
+}
+.textbox-addressingWidget {
+background-color: #333 !important;
+}
+.dummy-row-cell:not(:first-child) {
+background-color: #393939 !important;
+}
+.textbox-addressingWidget:hover,
+.textbox-addressingWidget[focused="true"] {
+background-color: #666 !important;
+}
+#msgSubject {
+  margin-top: 3px !important;
+  background-color: #333 !important;
+}
+#msgSubject:hover,
+#msgSubject[focused="true"] {
+  background-color: #666 !important;
+}
+#MsgHeadersToolbar {
+  background-color: #444 !important;
+}
+#headers-box {
+  border-top: 1px solid black !important;
+  background-color: #444 !important;
 }
