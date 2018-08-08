@@ -1,26 +1,59 @@
-#main-window[windowtype="navigator:browser"] {
-    background-color: transparent !important;
-}
- 
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+/* Glass8 ( http://www.glass8.eu/ ) required for 'Windows 7'-like window transparency */
+
 .titlebar-button {
-    background-color: transparent !important;
-    transition: background-color 0.2s ease;
+  margin-bottom: 10px !important;
+  opacity: 0.01 !important;
 }
- 
-.titlebar-button > .toolbarbutton-icon {
-    list-style-image: none;
-}
- 
+
 .titlebar-button:hover {
-    background-color: rgba(0, 0, 0, 0.15) !important;
+  opacity: 0.25 !important;
+  background: #FF6666 !important;
+  margin-bottom: 10px !important;
+  margin-right: 2px !important;
+  margin-left: -2px !important;
 }
-
-#titlebar-close:hover > .toolbarbutton-icon {
-    /* list-style-image: url("chrome://browser/skin/caption-buttons.svg#close-white") !important; */
-	background-color: transparent !important;
+.titlebar-button:not(#titlebar-close):hover {
+  opacity: 0.4 !important;
+  background: #BFFFF0 !important;
+  margin-left: -2px !important;
 }
-
-#titlebar-buttonbox .titlebar-button {
-	background-color: transparent !important;
+.titlebar-button:first-child:hover {
+  padding-left: 10px !important;
 }
-
+#messengerWindow {
+  background-color: transparent !important;
+  /* -moz-appearance: -moz-win-glass !important; */
+  background-image: none !important;
+  background: none !important;
+  --chrome-background-color: transparent !important;
+}
+#navigator-toolbox {
+  background-color: transparent !important;
+  color: #FFFFFF !important;
+}
+#TabsToolbar {
+  background-color: transparent !important;
+}
+.tab-background {
+  background-color: #404040 !important;
+}
+#quick-filter-bar {
+  background-color: #454545 !important;
+}
+#status-bar {
+  background-color: #454545 !important;
+}
+#header-view-toolbox > toolbar {
+-moz-appearance: none !important;
+color: #000000 !important;
+background: transparent !important;
+fill: #333333 !important;
+}
+#folderTree treecol, 
+#folderTree {
+  background-color: #656565 !important;
+  color: #FEFEFE !important;
+}
