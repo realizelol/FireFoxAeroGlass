@@ -53,10 +53,33 @@ color: #000000 !important;
 background: transparent !important;
 fill: #333333 !important;
 }
-#folderTree treecol, 
 #folderTree {
+  -moz-appearance: none !important;
   background-color: #656565 !important;
   color: #FEFEFE !important;
+}
+#folderPaneCols > hbox, #folderTree > treechildren::-moz-tree-row, .tree-scrollable-columns {
+	-moz-appearance: none !important;
+	color: inherit !important;
+	background: none !important;
+}
+#folderTree > hbox {
+	margin-top: 30px !important;
+}
+#folderTree > treechildren::-moz-tree-row {
+	margin-top: 0px !important;
+}
+#folderTree > treechildren::-moz-tree-row(selected) {
+	border: none !important;
+	background: #7c7c7c !important;
+}
+#folderTree > treechildren::-moz-tree-cell-text(selected) {
+	color: #f9f9f9 !important;
+}
+#folderTree > treechildren::-moz-tree-cell-text(folderNameCol, newMessages-true),
+#folderTree > treechildren::-moz-tree-cell-text(folderNameCol, closed, subfoldersHaveUnreadMessages-true) {
+	color: inherit !important;
+	font-style: italic !important;
 }
 #msgIdentity {
   background-color: #333 !important;
